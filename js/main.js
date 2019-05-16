@@ -44,6 +44,16 @@
 			fullscreen.style.display = 'none';
 		}
 
+		var urlParams = window.location.search;
+		console.log(urlParams.toString());
+
+		var urlParamVal = urlParams.split('=');
+		if (urlParams) {
+			video.src = urlParamVal[1];
+			console.log(urlParamVal[1]);
+		} else {
+			video.src = 'https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4';
+		}
 		// Check the volume
 		var checkVolume = function(dir) {
 			if (dir) {
