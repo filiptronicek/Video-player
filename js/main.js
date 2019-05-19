@@ -52,7 +52,7 @@
 			video.src = urlParamVal[1];
 			console.log(urlParamVal[1]);
 		} else {
-			video.src = 'https://cdn-std.dprcdn.net/files/acc_754429/rm5qca';
+			video.src = 'https://cdn-std.dprcdn.net/files/acc_754429/zAwAWJ';
 		}
 		// Check the volume
 		var checkVolume = function(dir) {
