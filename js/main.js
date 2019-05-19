@@ -52,8 +52,7 @@
 			video.src = urlParamVal[1];
 			console.log(urlParamVal[1]);
 		} else {
-			video.src =
-				'https://gcs-vimeo.akamaized.net/exp=1558272100~acl=%2A%2F1309288241.mp4%2A~hmac=c5f14a97e3f10b97a8da979a4a2fe95057433d2e8df471e414ab5e654c6e16f3/vimeo-prod-skyfire-std-us/01/1496/13/332483109/1309288241.mp4';
+			video.src = 'https://cdn-std.dprcdn.net/files/acc_754429/rm5qca';
 		}
 		// Check the volume
 		var checkVolume = function(dir) {
@@ -204,6 +203,13 @@
 					e.preventDefault();
 					setFullscreenData(true);
 					handleFullscreen(true);
+				} else if (e.keyCode == 75) {
+					e.preventDefault();
+					if (video.paused || video.ended) video.play();
+					else video.pause();
+				} else if (e.keyCode == 77) {
+					e.preventDefault();
+					video.muted = !video.muted;
 				}
 			});
 
