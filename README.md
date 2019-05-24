@@ -3,7 +3,7 @@ A rather simple HTML, JS, and CSS player inspired by [Creating a cross-browser v
 [Demo](https://ft-video-player.netlify.com/) (video curtesy from [PixaBay](https://pixabay.com/))
 
 
-##Keyboard controls  
+## Keyboard controls  
 
 
   * `f`: toggle fullscreen
